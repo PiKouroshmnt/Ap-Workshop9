@@ -12,6 +12,9 @@ public class Task implements Runnable{
     public Task(int number) throws FileNotFoundException {
         words = new HashSet<>();
         fileReader = new FileReader("assets\\file_" + number + ".txt");
+        maxLength = 0;
+        minLength = 0;
+        average = 0;
     }
 
     public void wordSetCreator() {
