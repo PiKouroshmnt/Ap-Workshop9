@@ -71,7 +71,6 @@ public class Task implements Runnable{
     }
 
     public double getAverage() {
-        calculateAverage();
         return average;
     }
 
@@ -88,5 +87,6 @@ public class Task implements Runnable{
         wordSetCreator();
         calculateMaxLength();
         calculateMinLength();
+        calculateAverage();
     }
 }
